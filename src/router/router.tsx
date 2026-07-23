@@ -5,7 +5,7 @@ import Home from "./routes/home/home.jsx";
 export default function Router(){
 
     return(
-        <BrowserRouter>
+        <BrowserRouter basename="/invoice-ai/">
             <Routes>
                     <Route path="/" Component={Home}/>
             </Routes>
