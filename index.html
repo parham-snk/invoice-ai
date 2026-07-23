@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Microphone Test</title>
+    <script>
+        navigator.mediaDevices.getUserMedia({ audio: true })
+    </script>
+</head>
+
+<body>
+
+    <button id="test">تست میکروفون</button>
+    <p id="result"></p>
+
+    <script>
+        const button = document.getElementById("test");
+        const result = document.getElementById("result");
+
+        button.onclick = async () => {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({
+                    audio: true
+                });
+
+                result.textContent = "✅ میکروفون شناسایی شد.";
+
+                console.log(stream);
+
+                // آزاد کردن میکروفون
+                stream.getTracks().forEach(track => track.stop());
+
+            } catch (err) {
+                result.textContent = "❌ دسترسی به میکروفون ممکن نیست.";
+                console.error(err);
+            }
+        };
+    </script>
+
+</body>
+
+</html>

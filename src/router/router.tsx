@@ -1,6 +1,6 @@
 import { BrowserRouter,Routes,Route } from "react-router-dom";
-import Home from "./routes/home/home";
-import Dashboard from "./routes/auth/dashboard";
+import Home from "./routes/home/home.jsx";
+
 
 export default function Router(){
 
@@ -8,7 +8,6 @@ export default function Router(){
         <BrowserRouter>
             <Routes>
                     <Route path="/" Component={Home}/>
-                    <Route path="/dashboard" Component={Dashboard}/>
             </Routes>
         </BrowserRouter>
     )
