@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        function getColData(c) {
+            let col = String(c).split('تا')
+
+            let tr= document.createElement("tr")
+            let td=document.createElement("td")
+
+            tr.append(td)
+            return tr
+
+        }
+        function getRows(t) {
+            let text = String(t)
+            if (text.split("و").length > 0) {
+                let data = text.split("و").map(getColData)
+                let table = document.createElement("table")
+                table.append(data)
+                document.append(table)
+            }
+        }
+
         const SpeechRecognition =
             window.SpeechRecognition || window.webkitSpeechRecognition;
 
@@ -21,7 +41,7 @@
                 text += event.results[i][0].transcript;
             }
 
-            document.body.innerText=text
+            getRows(text)
         };
 
         recognition.start();
@@ -29,7 +49,9 @@
 </head>
 
 <body>
+    <div class="" id="logs">
 
+    </div>
 </body>
 
 </html>
