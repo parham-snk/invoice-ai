@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+         *{
+            direction: rtl;
+         }
         table{
             border: 1px solid black;
         }
@@ -23,8 +26,8 @@
         let tr = document.createElement("tr")
         let td_name = document.createElement("td")
         let td_qty = document.createElement("td")
-        td_name.innerHTML = col[1]
-        td_qty.innerHTML = col[0]
+        td_name.innerHTML = col[0]
+        td_qty.innerHTML = col[1]
         tr.append(td_name)
         tr.appendChild(td_qty)
         return tr
@@ -49,7 +52,7 @@
             document.body.append(table)
         }
     }
-
+getRows("20 تا چیپس و 10 تا بستنی")
    
     const SpeechRecognition =
         window.SpeechRecognition || window.webkitSpeechRecognition;
