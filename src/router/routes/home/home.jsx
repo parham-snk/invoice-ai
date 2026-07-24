@@ -10,7 +10,7 @@ export default function Home() {
     const {browserSupportsSpeechRecognition,listening,transcript}=useSpeechRecognition()
     useEffect(()=>{
         if(isPlay){
-            speachRecognition.startListening({language:"fa-IR"})
+            speachRecognition.startListening({language:"fa-IR",continuous:true})
         }else{
             speachRecognition.stopListening()
         }
@@ -29,7 +29,7 @@ export default function Home() {
                 }
             </div>
 
-            <div className="">
+            <div className="bg-zinc-900 p-2 border-white border text-white text-justify">
                 {
                     transcript
                 }
