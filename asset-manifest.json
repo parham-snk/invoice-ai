@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/invoice-ai/static/css/main.a84c88d0.css",
-    "main.js": "/invoice-ai/static/js/main.1428c9c5.js",
+    "main.js": "/invoice-ai/static/js/main.618b7050.js",
     "static/js/453.bd645ac9.chunk.js": "/invoice-ai/static/js/453.bd645ac9.chunk.js",
     "index.html": "/invoice-ai/index.html",
     "main.a84c88d0.css.map": "/invoice-ai/static/css/main.a84c88d0.css.map",
-    "main.1428c9c5.js.map": "/invoice-ai/static/js/main.1428c9c5.js.map",
+    "main.618b7050.js.map": "/invoice-ai/static/js/main.618b7050.js.map",
     "453.bd645ac9.chunk.js.map": "/invoice-ai/static/js/453.bd645ac9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a84c88d0.css",
-    "static/js/main.1428c9c5.js"
+    "static/js/main.618b7050.js"
   ]
 }
