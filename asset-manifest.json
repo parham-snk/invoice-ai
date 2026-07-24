@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/invoice-ai/static/css/main.62d3e7aa.css",
+    "main.js": "/invoice-ai/static/js/main.fb79d435.js",
+    "static/js/453.bd645ac9.chunk.js": "/invoice-ai/static/js/453.bd645ac9.chunk.js",
+    "index.html": "/invoice-ai/index.html",
+    "main.62d3e7aa.css.map": "/invoice-ai/static/css/main.62d3e7aa.css.map",
+    "main.fb79d435.js.map": "/invoice-ai/static/js/main.fb79d435.js.map",
+    "453.bd645ac9.chunk.js.map": "/invoice-ai/static/js/453.bd645ac9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62d3e7aa.css",
+    "static/js/main.fb79d435.js"
+  ]
+}
