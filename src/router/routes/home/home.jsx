@@ -19,14 +19,19 @@ export default function Home() {
 
     return (
         <div className="bg-zinc-800 w-screen h-screen flex justify-center align-middle items-center flex-col">
-            <div className="text-white ">
+            <div className="text-white "
+            onPointerDown={()=>setIsPlay(true)}
+            onPointerUp={()=>setIsPlay(false)} 
+            >
                 {
                     isPlay &&
-                    <FaPause size={100} className="animate-pulse cursor-pointer opacity-0" onMouseUp={() => setIsPlay(!isPlay)} />
+                    <FaPause size={100} className="animate-pulse cursor-pointer opacity-0" />
                 }
                 {
                     !isPlay &&
-                    <FaPlay size={100} className="cursor-pointer " onMouseDown={() => setIsPlay(!isPlay)} />
+                    <FaPlay size={100} className="cursor-pointer "
+                     
+                    />
                 }
             </div>
 
