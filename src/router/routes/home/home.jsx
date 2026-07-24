@@ -31,7 +31,7 @@ export default function Home() {
 
             <div className="">
                 {
-                    trans
+                    transcript
                 }
             </div>
         </div>
