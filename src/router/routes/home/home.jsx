@@ -37,7 +37,8 @@ export default function Home() {
 
             {
                 transcript &&
-                <div className="bg-zinc-900 p-2 border-white border text-white text-justify fixed bottom-10">
+                <div className="bg-zinc-900 p-2 border-white border text-white text-justify fixed bottom-10 select-none" contentEditable>
+                    qweqwe
                     {
                         transcript
                     }
