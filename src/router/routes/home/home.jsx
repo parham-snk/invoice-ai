@@ -26,7 +26,7 @@ export default function Home() {
                 }
                 {
                     !isPlay &&
-                    <FaPlay size={100} className="animate-pulse cursor-pointer opacity-0" onMouseDown={() => setIsPlay(!isPlay)} />
+                    <FaPlay size={100} className="cursor-pointer " onMouseDown={() => setIsPlay(!isPlay)} />
                 }
             </div>
 
