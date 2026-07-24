@@ -545,6 +545,14 @@ video {
   display: none;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
